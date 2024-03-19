@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet"  href="/Users/kartik/Documents/SocialBook/style.css">
+    <link rel="icon" href="data:image/jpeg;base64,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">
+    <script src="https://kit.fontawesome.com/4e11ce5e16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left"> 
+            <img src="file:///Users/kartik/Documents/SocialBook/Images/logo.png" class="logo">
+            <ul>
+                <li><img src="file:///Users/kartik/Downloads/images/notification.png"> </li>
+                <li><img src="file:///Users/kartik/Documents/SocialBook/Images/inbox.png"> </li>
+                <li><img src="file:///Users/kartik/Documents/SocialBook/Images/video.png"> </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+            <img src="/Users/kartik/Documents/SocialBook/Images/search.png">
+            <input type="text" placeholder="Search">
+            </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+            <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png">
+        </div>
+        </div>
+        <!--------------setting-menu--------->
+       
+         <div class="settings-menu">
+
+             <div id="dark-btn">
+                <span></span>
+             </div>
+
+          <div class="settings-menu-inner">
+            <div class="user-profile">
+                <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" >
+                <div>
+                    <p>John Nicholson</p>
+                    <a href="#">See Your Profile</a>
+                </div>
+            </div>
+<hr>
+
+            <div class="user-profile">
+                <img src="/Users/kartik/Documents/SocialBook/Images/feedback.png" >
+                <div>
+                    <p>Give Feedback</p>
+                    <a href="#">Help us to improve the new design</a>
+                </div>
+            </div><hr>
+          
+          
+          <div class="settings-links">
+            <img src="/Users/kartik/Documents/SocialBook/Images/setting.png" class="settings-icon">
+            <a href="#">Settings & Privacy <img src="/Users/kartik/Documents/SocialBook/Images/arrow.png" width="10px"></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="/Users/kartik/Documents/SocialBook/Images/help.png" class="settings-icon">
+            <a href="#">Help & Suppport <img src="/Users/kartik/Documents/SocialBook/Images/arrow.png" width="10px"></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="/Users/kartik/Documents/SocialBook/Images/display.png" class="settings-icon">
+            <a href="#">Display & Accessability <img src="/Users/kartik/Documents/SocialBook/Images/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="/Users/kartik/Documents/SocialBook/Images/logout.png" class="settings-icon">
+            <a href="#">Logout <img src="/Users/kartik/Documents/SocialBook/Images/arrow.png" width="10px"></a>
+          </div>
+
+         </div>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-------------left-sidebar------------>
+        <div class="left-sidebar">
+          <div class="imp-links">
+            <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/news.png">Latest News</a>
+            <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/friends.png">Freinds</a>
+            <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/group.png">Groups</a>
+            <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/marketplace.png">Market Place</a>
+            <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/watch.png">Watch</a>
+            <a href="#">See More</a>
+          </div>
+          <div class="shortcut-links">
+            <p>Your Shortcuts</p>
+            <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/shortcut-1.png" >Web Developers</a>
+            <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/shortcut-2.png" >Web Design Course</a>
+            <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/shortcut-3.png" >Full Stack Development</a>
+            <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/shortcut-4.png" >Websit Experts</a>
+
+
+          </div>
+        </div>
+                <!-------------main-content------------>
+
+        <div class="main-content">
+            <div class="Story-gallery">
+                <div class="Story Story1">
+                    <img src="/Users/kartik/Documents/SocialBook/Images/upload.png" >
+                    <p>Post Story</p>
+                </div>
+                <div class="Story Story2" >
+                    <img src="/Users/kartik/Documents/SocialBook/Images/member-1.png" >
+                    <p>Alison</p>
+                </div>
+                <div class="Story Story3">
+                    <img src="/Users/kartik/Documents/SocialBook/Images/member-2.png" >
+                    <p>Jackson</p>
+                </div>
+                <div class="Story Story4">
+                    <img src="/Users/kartik/Documents/SocialBook/Images/member-3.png" >
+                    <p>Samona</p>
+                </div>
+                <div class="Story Story5">
+                    <img src="/Users/kartik/Documents/SocialBook/Images/member-4.png" >
+                    <p>Jhon Doe</p>
+                </div>
+                </div>
+     
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" >
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public<i class="fa-solid fa-sort-down"></i></small>
+                    </div>
+                </div>
+
+               <div class="post-input-container">
+                <textarea rows="3" placeholder="What on your mind,Jhon?"></textarea>
+                <div class="add-post-links">
+                    <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/live-video.png" >Live Video</a>
+                    <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/photos.png" >Photos/Video</a>
+                    <a href="#"><img src="/Users/kartik/Documents/SocialBook/Images/feeling.png" >Feeling/Activity</a>
+
+                </div>
+               </div>
+
+            
+            </div>
+
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" >
+            <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40pm</span>
+            </div>
+        </div>
+        <a href="#"></a><i class="fa-solid fa-ellipsis-v"></i>
+
+    </div>
+   
+    <p class="post-text">Connect with me on Linkedln: <a href="#"><span>Kartik Kohapare</span></a>. Currently persuing MCA from <span>NIT-KURUKSHETRA,</span></a>Looking forward to new opportunities and exploring new learnings.
+    <a href="#">#Kartik Kohapare</a> <a href="#">#Linkedln Profile</a> </p>
+    <img src="/Users/kartik/Documents/SocialBook/Images/feed-image-1.png" class="post-img">
+    <div class="post-row">
+       <div class="activity-icons">
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/like-blue.png">150</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/comments.png">45</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/share.png">22</div>
+
+        
+       </div> 
+       <div class="post-profile-icon">
+        <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+
+       </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" >
+            <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40pm</span>
+            </div>
+        </div>
+        <a href="#"></a><i class="fa-solid fa-ellipsis-v"></i>
+
+    </div>
+   
+    <p class="post-text">Follow me on Linkedln: <a href="#"><span>Kartik Kohapare</span></a>. Currently persuing MCA from <span>NIT-KURUKSHETRA,</span></a>Looking forward to new opportunities and exploring new learnings.
+    <a href="#">#Kartik Kohapare</a> <a href="#">#Linkedln Profile</a> </p>
+    <img src="/Users/kartik/Documents/SocialBook/Images/feed-image-2.png" class="post-img">
+    <div class="post-row">
+       <div class="activity-icons">
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/like.png">150</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/comments.png">45</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/share.png">22</div>
+
+        
+       </div> 
+       <div class="post-profile-icon">
+        <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+
+       </div>
+    </div>
+</div>
+
+
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" >
+            <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40pm</span>
+            </div>
+        </div>
+        <a href="#"></a><i class="fa-solid fa-ellipsis-v"></i>
+
+    </div>
+   
+    <p class="post-text">Connect with me on Linkedln: <a href="#"><span>Kartik Kohapare</span></a>. Currently persuing MCA from <span>NIT-KURUKSHETRA,</span></a>Looking forward to new opportunities and exploring new learnings.
+    <a href="#">#Kartik Kohapare</a> <a href="#">#Linkedln Profile</a> </p>
+    <img src="/Users/kartik/Documents/SocialBook/Images/feed-image-3.png" class="post-img">
+    <div class="post-row">
+       <div class="activity-icons">
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/like.png">150</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/comments.png">45</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/share.png">22</div>
+
+        
+       </div> 
+       <div class="post-profile-icon">
+        <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+
+       </div>
+    </div>
+</div>
+
+
+
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" >
+            <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40pm</span>
+            </div>
+        </div>
+        <a href="#"></a><i class="fa-solid fa-ellipsis-v"></i>
+
+    </div>
+   
+    <p class="post-text">Connect with me on Linkedln: <a href="#"><span>Kartik Kohapare</span></a>. Currently persuing MCA from <span>NIT-KURUKSHETRA,</span></a>Looking forward to new opportunities and exploring new learnings.
+    <a href="#">#Kartik Kohapare</a> <a href="#">#Linkedln Profile</a> </p>
+    <img src="/Users/kartik/Documents/SocialBook/Images/feed-image-4.png" class="post-img">
+    <div class="post-row">
+       <div class="activity-icons">
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/like.png">150</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/comments.png">45</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/share.png">22</div>
+
+        
+       </div> 
+       <div class="post-profile-icon">
+        <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+
+       </div>
+    </div>
+</div>
+
+
+
+<div class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" >
+            <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40pm</span>
+            </div>
+        </div>
+        <a href="#"></a><i class="fa-solid fa-ellipsis-v"></i>
+
+    </div>
+   
+    <p class="post-text">Connect with me on Linkedln: <a href="#"><span>Kartik Kohapare</span></a>. Currently persuing MCA from <span>NIT-KURUKSHETRA,</span></a>Looking forward to new opportunities and exploring new learnings.
+    <a href="#">#Kartik Kohapare</a> <a href="#">#Linkedln Profile</a> </p>
+    <img src="/Users/kartik/Documents/SocialBook/Images/feed-image-5.png" class="post-img">
+    <div class="post-row">
+       <div class="activity-icons">
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/like.png">150</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/comments.png">45</div>
+        <div><img src="/Users/kartik/Documents/SocialBook/Images/share.png">22</div>
+
+        
+       </div> 
+       <div class="post-profile-icon">
+        <img src="/Users/kartik/Documents/SocialBook/Images/profile-pic.png" ><i class="fa-solid fa-sort-down"></i>
+
+       </div>
+    </div>
+</div>
+
+<button type="button" class="load-more-btn">Load More</button>
+
+        </div>
+                <!-------------right-sidebar------------>
+
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">see All</a>
+            </div>
+        
+
+        <div class="event">
+            <div class="left-event">
+                 <h3>18</h3>
+                 <span>March</span>
+            </div>
+            <div class="right-event">
+                <h4>Social Media</h4>
+                <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+                <a href="#">More Info</a>
+            </div>
+            
+        </div>
+        <div class="event">
+            <div class="left-event">
+                 <h3>22</h3>
+                 <span>June</span>
+            </div>
+            <div class="right-event">
+                <h4>Mobile Marketing</h4>
+                <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+                <a href="#">More Info</a>
+            </div>
+            
+        </div>
+        <div class="sidebar-title">
+            <h4>Advertisement</h4>
+            <a href="#">Close</a>
+        </div>
+        <img src="/Users/kartik/Documents/SocialBook/Images/advertisement.png"  class="sidebar-ads">
+        <div class="sidebar-title">
+            <h4>Conversation</h4>
+            <a href="#">Hide chat</a>
+        </div>
+        <div class="online-list">
+            <div class="online">
+             <img src="/Users/kartik/Documents/SocialBook/Images/member-1.png">
+            </div>
+            <p> Alison Mina</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+             <img src="/Users/kartik/Documents/SocialBook/Images/member-2.png">
+            </div>
+            <p> Jackson Aston</p>
+        </div> 
+        <div class="online-list">
+            <div class="online">
+             <img src="/Users/kartik/Documents/SocialBook/Images/member-3.png">
+            </div>
+            <p> Samona Rose</p>
+        </div>
+
+    </div>
+    </div>
+
+<div class="footer">
+  <p>  &#169 - Kartik Kohapare</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
